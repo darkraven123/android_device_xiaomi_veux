@@ -366,8 +366,14 @@ PRODUCT_COPY_FILES += \
 
 # Power
 PRODUCT_PACKAGES += \
-    android.hardware.power-service-qti \
+    android.hardware.power-service-qti
+
+# Perf
+PRODUCT_PACKAGES += \
     vendor.qti.hardware.perf@2.2.vendor
+
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/msm_irqbalance.conf:$(TARGET_COPY_OUT_VENDOR)/etc/msm_irqbalance.conf
 
 # Powerhint
 PRODUCT_COPY_FILES += \
@@ -449,7 +455,7 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.servicetracker@1.2.vendor
 
 # Shipping API Level
-PRODUCT_SHIPPING_API_LEVEL := 30    
+PRODUCT_SHIPPING_API_LEVEL := 30
 
 # Soong Namespaces
 PRODUCT_SOONG_NAMESPACES += \
