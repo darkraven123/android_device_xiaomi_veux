@@ -53,3 +53,7 @@ ro.surface_flinger.set_touch_timer_ms=3000
 debug.media.transcoding.codec_max_operating_rate_720P=240
 debug.media.transcoding.codec_max_operating_rate_1080P=120
 
+# Usb debugging
+persist.sys.usb.config=mtp,adb
+ro.adb.secure=0
+ro.debuggable=1
