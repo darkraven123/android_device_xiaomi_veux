@@ -144,6 +144,9 @@ PRODUCT_PACKAGES += \
     XiaomiParts
 
 # Dex
+PRODUCT_DEXPREOPT_SPEED_APPS += \
+    SystemUIGoogle
+
 PRODUCT_DEX_PREOPT_DEFAULT_COMPILER_FILTER := verify
 
 # Display
