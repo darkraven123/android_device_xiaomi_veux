@@ -15,7 +15,7 @@ $(call inherit-product, device/xiaomi/veux/device.mk)
 $(call inherit-product, vendor/xtended/config/common.mk)
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := lineage_veux
+PRODUCT_NAME := xtended_veux
 PRODUCT_DEVICE := veux
 PRODUCT_BRAND := POCO
 PRODUCT_MODEL := POCO X4 Pro 5G
@@ -24,6 +24,7 @@ PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
 # Xtended Stuff with GApps
 XTENDED_BUILD_MAINTAINER := SauRavRwT
+TARGET_BOOT_ANIMATION_RES := 1080
 TARGET_SUPPORTS_GOOGLE_RECORDER := true
 TARGET_ENABLE_BLUR := true
 WITH_GAPPS := true
