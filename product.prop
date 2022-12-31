@@ -44,6 +44,10 @@ bluetooth.profile.sap.server.enabled=true
 bluetooth.profile.ccp.server.enabled=true
 bluetooth.profile.vcp.controller.enabled=true
 
+# Blur
+ro.sf.blurs_are_expensive=1
+ro.surface_flinger.supports_background_blur=1
+
 # Display
 ro.surface_flinger.set_display_power_timer_ms=1000
 ro.surface_flinger.set_idle_timer_ms=3000
