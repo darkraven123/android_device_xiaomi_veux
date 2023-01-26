@@ -11,7 +11,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from veux device
 $(call inherit-product, device/xiaomi/veux/device.mk)
 
-# Inherit some common riceDroid Stuff.
+# Inherit some common Xtended Stuff.
 $(call inherit-product, vendor/xtended/config/common.mk)
 
 # Device identifier. This must come after all inclusions.
@@ -23,14 +23,17 @@ PRODUCT_MANUFACTURER := Xiaomi
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
 # Xtended Stuff with GApps
-XTENDED_BUILD_MAINTAINER := SauRavRwT
 XTENDED_BUILD_TYPE := UNOFFICIAL
+XTENDED_BUILD_MAINTAINER := SauRavRwT
+PROCESSOR_MODEL := SM6375
+WITH_GAPPS := true
 XTENDED_BUILD_DONATE_URL := https://www.paypal.me/RiteshKrSharma
+XTENDED_BUILD_SUPPORT_URL := https://t.me/veux_builds
+
+# Inherit some common device props
+TARGET_USES_BLUR := true
 TARGET_BOOT_ANIMATION_RES := 1080
 TARGET_SUPPORTS_QUICK_TAP := true
+TARGET_SUPPORTS_CALL_RECORDING := true
 TARGET_SUPPORTS_GOOGLE_RECORDER := true
-TARGET_USES_BLUR := true
-WITH_GAPPS := true
-
-# SoC
-PROCESSOR_MODEL := SM6375
+TARGET_INCLUDE_LIVE_WALLPAPERS := true
